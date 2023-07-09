@@ -31,7 +31,11 @@ After the deployment, it's crucial to thoroughly test our configuration. We'll v
 
 
 ## Step 4: Clean Up:
-Finally, we'll discuss best practices for cleaning up the resources once they are no longer needed. Proper resource management is essential to optimize costs and maintain a clean and manageable AWS environment.
+Finally, cleaning up the resources once they are no longer needed. Proper resource management is essential to optimize costs and maintain a clean and manageable AWS environment.
+
+```
+terraform destroy
+```
 
 
 
