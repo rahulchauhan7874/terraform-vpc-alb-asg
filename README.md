@@ -17,18 +17,27 @@ We'll start by setting up the VPC infrastructure. This involves creating public 
 
 >Creating the VPC involves defining the subnets, setting up NAT gateways for internet access, and configuring security groups to enforce network security policies. This ensures that our application servers in the private subnets are shielded from direct internet exposure while still being able to securely communicate with the outside world.
 
+![](./images/vpcmap.png)
+![](./images/instances.png)
+![](./images/LoadBalancer.png)
+![](./images/ElasticIP.png)
+![](./images/Targetgroups.png)
+![](./images/nat_gw.png)
 
 ## Step 2: Deploy Your Application:
 Once the VPC is in place, we'll proceed to deploy our application. This will involve setting up an Auto Scaling group, which automatically scales the number of application servers based on the incoming traffic. The Auto Scaling group ensures that our application is highly available and can handle increased load efficiently.
 
 >Deploying our application with Auto Scaling groups enables us to dynamically adjust the number of instances based on demand. This ensures that our application can handle traffic spikes and provides a seamless experience to our users. The Application Load Balancer plays a crucial role in distributing incoming traffic evenly across our application servers, optimizing performance and reliability.
 
+![](./images/terminal1.png)
+![](./images/terminal2.png)
 
 
 ## Step 3: Test Your Configuration:
 After the deployment, it's crucial to thoroughly test our configuration. We'll verify that the load balancer distributes traffic evenly across the application servers in different AZs. Proper resource management and clean-up are also vital considerations. By following best practices, such as terminating unused resources and deleting unnecessary components, we can optimize costs and maintain a well-organized and manageable AWS environment.
 
-
+![](./images/postman1.png)
+![](./images/postman2.png)
 
 ## Step 4: Clean Up:
 Finally, cleaning up the resources once they are no longer needed. Proper resource management is essential to optimize costs and maintain a clean and manageable AWS environment.
