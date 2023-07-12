@@ -1,7 +1,7 @@
 # Building a Highly Resilient VPC Architecture on AWS 
 # Using Terraform tool for IaC
 
-![](./images/vpc-example-private-subnets.png)
+![](./images/vpc1.png)
 
 ## Building a Highly Resilient VPC for Production Workloads
 
